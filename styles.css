@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+  /* font */
+  --Standaard_Font: 'Bai Jamjuree', sans-serif;
+
+  /* colors */
+  --Strong_Cyan: hsl(171, 66%, 44%);
+  --Light_Blue: hsl(233, 100%, 69%);
+  --Grayish_Blue: hsl(201, 11%, 66%);
+  --Dark_Grayish_Blue: hsl(210, 10%, 33%);
+}
+
+* { 
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--Standaard_Font);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2 {
+    font-size: 1.80rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.40rem;
+    font-weight: 600;
+}
+
+p {
+  font-size: 1.10rem;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  h3 {
+   font-size: 1rem;
+   font-weight: 600;
+  }
+
+  p {
+   font-size: 0.75rem;
+   font-weight: 400;
+   line-height: 180%;
+  }
+}
+
+.Logo {
+  margin-bottom: 40px;
+}
+
+.HeroSection {
+  text-align: center;
+  padding: 70px;
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: none;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.IntroText {
+  font-family: var(--Standaard_Font);
+}
+
+.IntroText > h1 {
+  margin-bottom: 10px;
+}
+
+.IntroText > p {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.DownloadButtons {
+  margin-top: 50px;
+}
+
+.IOS {
+  background-color: var(--Strong_Cyan);
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  margin-right: 15px;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0px 3px 0px var(--Dark_Grayish_Blue);
+}
+
+.Mac {
+  background-color: var(--Light_Blue);
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  margin-left: 15px;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0px 3px 0px var(--Dark_Grayish_Blue);
+}
+
+@media (max-width: 600px) {
+
+  .Logo {
+    width: 100px;
+  }
+
+  .HeroSection {
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: none;
+    background-size: cover;
+    margin-bottom: 0px;
+    padding: 1rem;
+  }
+
+  .IntroText > h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .IntroText > p {
+    width: 80%;
+    font-size: 0.75rem;
+  }
+
+  .DownloadButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .IOS {
+    margin: 10px;
+    padding: 12px 10px;
+  }
+
+  .Mac {
+    margin: 10px;
+    padding: 12px 10px;
+  }
+}
+
+.snippets {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.snippets_text {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.snippets_text > h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+
+  .snippets {
+    text-align: center;
+  }
+
+  .snippets_text > p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.advantages_text > * {
+  margin-bottom: 60px;
+}
+
+.advantages_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6rem;
+}
+
+.computer_img {
+  padding: 0 6rem;
+}
+
+.option > h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .computer_img > img {
+    width: 250px;
+  }
+
+  .advantages_text {
+    padding: 0px;
+    text-align: center;
+    width: 250px;
+  }
+
+  .computer_img {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .advantages_text>* {
+    margin-bottom: 20px;
+  }
+}
+
+.access {
+  text-align: center;
+}
+
+.access_text {
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.access_text > h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+
+  .devices_img > img {
+    width: 240px;
+  }
+
+  .access_text {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
+.supercharge {
+  text-align: center;
+}
+
+.supercharge_text {
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 600px) {
+
+  .supercharge {
+    margin-bottom: 30px;
+  }
+
+  .supercharge_text {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+
+.supercharge_text > h2 {
+  margin-bottom: 10px;
+}
+
+.collumns {
+  display: flex;
+  justify-content: center;
+  margin: 0px 150px;
+  margin-bottom: 120px;
+}
+
+.suggestion {
+  text-align: center;
+  width: 300px;
+  margin: 0 5rem;
+}
+
+.suggestion > img {
+  margin: 20px;
+}
+
+.suggestion_text > h3 {
+  margin-bottom: 20px;
+}
+
+.special_suggestion {
+  margin-top: -7px;
+}
+
+@media (max-width: 600px) {
+
+  .collumns {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .suggestion {
+    width: 250px;
+  }
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 130px 120px 130px;
+}
+
+.logo {
+  margin: 0 5rem;
+}
+
+@media (max-width: 600px) {
+
+  .logos {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .logo {
+    margin-bottom: 40px;
+  }
+}
+
+
+.clipboard {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.clipboard_text {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.clipboard_text > h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+
+  .clipboard {
+    margin: 0;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+  }
+
+  .clipboard_text {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .DownloadButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     margin-top: 20px;
+  }
+
+  .IOS {
+     margin: 10px;
+    padding: 12px 10px;
+  }
+
+   .Mac {
+     margin: 10px;
+    padding: 12px 10px;
+  }
+}
+
+footer {
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_socials {
+  display: flex;
+  align-items: center;
+}
+
+.social_icon_conatiner {
+  padding: 15px;
+}
+
+.footer_list {
+  margin-left: -300px;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  align-items: flex-start;
+}
+
+.footer_icon > img {
+  width: 30%;
+  padding: 30px;
+}
+
+.collumn > p {
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  
+  footer {
+    flex-direction: column;
+  }
+
+  .footer_icon {
+    display: flex;
+    justify-content: center;  
+  }
+
+  .footer_list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .collumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_socials {
+    margin-bottom: 2rem;
+  }
+}
+
+
